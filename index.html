@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <title>Chat</title>
+</head>
+
+<body>
+  <header></header>
+  <form onsubmit="return false">
+    <h1 class="main__title">Сервис комментариев со спам фильтром</h1>
+    <div class="main__chat">
+      <div id="main__chat-list">
+        <h2 class="chat__title">Чат</h2>
+        <!-- <div class="main__chat-lenta">
+          <div class="chat__img-Ava">
+            <img class="chat__avatar" src="./assets/img/1.png" alt="avatar">
+            <p class="chat__name">Борис</p>
+          </div>
+          <div class="chat__time-Comment">
+            <p class="dat">Дата</p>
+            <p class="chat__comment">Привет, котаны!</p>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="main__chat-comment">
+        <h2 class="chat__title">Оставьте ваш комментарий</h2>
+        <!-- блок с радио кнопкой -->
+        <fieldset>
+          <legend>Показывать ваше имя?</legend>
+          <div class="radio-block">
+            <input type="radio" id="yes" name="yes" value="yes" checked>
+            <label for="yes" style="padding-right: 20px;">Да</label>
+
+            <input type="radio" id="no" name="no" value="no">
+            <label for="no">Нет</label>
+          </div>
+        </fieldset>
+        <label for="name" class="labelnam">Введите имя:</label>
+        <input type="text" placeholder="Имя" id="name" minlength="1" maxlength="20">
+        <label for="avatar">Введите ссылку на аватар:</label>
+        <input type="url" placeholder="https://..." id="avatar">
+        <label for="comment">Введите комментарий:</label>
+        <textarea name="user_message" id="comment" placeholder="Комментарий" minlength="1" maxlength="200"></textarea>
+
+        <button id="button">Отправить</button>
+      </div>
+
+    </div>
+  </form>
+  <footer></footer>
+  <script src="./assets/script/script.js"></script>
+</body>
+
+</html>

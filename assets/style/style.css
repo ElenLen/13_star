@@ -1,0 +1,92 @@
+body {
+  text-align: center;
+  background-color: plum;
+}
+
+.main__chat {
+  display: flex;
+  padding: 1em;
+  border: 1px solid red;
+  border-radius: 1em;
+  background-color: thistle;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #6604f9;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+#button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  background-color: plum;
+}
+
+#main__chat-list {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 500px;
+  border-radius: 1em;
+  width: 100%;
+  margin: 20px;
+}
+
+.main__chat-comment {
+  width: 50%;
+  margin: 20px;
+}
+
+.main__chat-lenta {
+  display: flex;
+  border: 1px solid rebeccapurple;
+  border-radius: 1em;
+  margin-bottom: 5px;
+  word-break: break-word;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.chat__avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.chat__name {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid rgb(197, 50, 153);
+  border-radius: 20px;
+  background-color: thistle;
+}
+
+.chat__time-Comment {
+  width: 100%;
+  padding: 20px;
+}
+
+.chat__comment {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: plum;
+}
+
+.radio-block {
+  display: inline-flex;
+}
