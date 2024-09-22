@@ -70,14 +70,8 @@ btn.addEventListener("click", () => {
       avaInput.value = imgArr[Math.floor(Math.random() * imgArr.length)];
     }
     console.log(imgRand(img));
-  } else if (avaInput.value.indexOf("http://") === 0) {
-    // alert("Не корректная ссылка!");
-    // return;
-  } else if (avaInput.value.indexOf("https://") === 0) {
-    // alert("Не корректная ссылка!");
-    // return;
-  } else {
-    alert("Не корректная ссылка!");
+  } else if (avaInput.value.indexOf("http") != 0) {
+    alert("https:// Не корректная ссылка!");
     return;
   }
 
